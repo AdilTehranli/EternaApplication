@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using EternaApp.ViewModels;
+using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
 namespace EternaApp.Controllers
@@ -8,7 +9,11 @@ namespace EternaApp.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            HomeVm vm = new HomeVm()
+            {
+                features = Data.features
+            };
+            return View(vm);
         }
         
         public IActionResult About()
