@@ -11,5 +11,6 @@ namespace EternaApp
         new Feature() { Id = 3,Title = "programing",Desc = "Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident",Icon = "bi bi-card-checklist"},
        };
 
+
     }
 }
