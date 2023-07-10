@@ -1,7 +1,13 @@
+using EternaApp;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddDbContext<EternaDbContext>(opt =>
+opt.UseSqlServer("server=MSI\\SQLEXPRESS;Database=EternaApp2;Trusted_Connection=True")
+) ;
 
 var app = builder.Build();
 

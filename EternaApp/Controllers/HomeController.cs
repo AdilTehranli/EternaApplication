@@ -6,12 +6,16 @@ namespace EternaApp.Controllers
 {
     public class HomeController : Controller
     {
-
+        private EternaDbContext _context;
+        public HomeController(EternaDbContext context)
+        {
+            _context = context;
+        }
         public IActionResult Index()
         {
             HomeVm vm = new HomeVm()
             {
-                features = Data.features
+                features = _context.Features.ToList()
             };
             return View(vm);
         }
