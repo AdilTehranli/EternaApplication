@@ -23,7 +23,11 @@ namespace EternaApp.Controllers
         
         public IActionResult About()
         {
-            return View();
+            HomeVm vm = new HomeVm()
+            {
+                testimonials = _context.Testimonials.ToList(),
+            };
+            return View(vm);
         }
 
     }

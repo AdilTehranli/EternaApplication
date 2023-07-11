@@ -6,5 +6,6 @@ namespace EternaApp.ViewModels
     {
         public List<Feature> features { get; set; }
         public List<Service> services { get; set; }
+        public List<Testimonials> testimonials { get; set;}
     }
 }
