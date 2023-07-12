@@ -12,6 +12,7 @@ namespace EternaApp
         public DbSet<Feature>? Features { get; set; }
         public DbSet<Service>? Services { get; set; }
         public DbSet<Testimonials> Testimonials { get; set;}
+        public DbSet<HomeService> HomeServices { get; set; }
 
     }
 }

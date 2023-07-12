@@ -16,7 +16,8 @@ namespace EternaApp.Controllers
             HomeVm vm = new HomeVm()
             {
                 features = _context.Features.ToList(),
-                services=_context.Services.ToList()
+                services=_context.Services.ToList(),
+                homeServices=_context.HomeServices.ToList(),
             };
             return View(vm);
         }
