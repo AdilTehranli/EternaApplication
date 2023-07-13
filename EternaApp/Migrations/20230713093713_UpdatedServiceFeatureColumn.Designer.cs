@@ -3,6 +3,7 @@ using EternaApp;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EternaApp.Migrations
 {
     [DbContext(typeof(EternaDbContext))]
-    partial class EternaDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230713093713_UpdatedServiceFeatureColumn")]
+    partial class UpdatedServiceFeatureColumn
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
