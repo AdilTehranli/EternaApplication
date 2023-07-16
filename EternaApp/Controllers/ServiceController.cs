@@ -12,6 +12,8 @@ namespace EternaApp.Controllers
         }
         public IActionResult Index()
         {
+
+
             ServiceVM vm = new ServiceVM()
             {
               Featuress= _context.ServicesFeature.ToList(),
