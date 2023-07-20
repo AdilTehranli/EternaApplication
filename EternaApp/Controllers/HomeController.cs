@@ -10,6 +10,7 @@ namespace EternaApp.Controllers
         public HomeController(EternaDbContext context)
         {
             _context = context;
+
         }
         public IActionResult Index()
         {
